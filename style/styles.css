@@ -1,0 +1,139 @@
+/* Reset */ 
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* font size for all paragraph elements */
+p {
+    font-size: .7em;
+}
+
+/* Typography */ 
+
+/* default font family, size and line-height */
+body {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.125rem;
+    line-height: 1.6;   
+}
+
+/* font family and size for h1 */
+h1{
+    font-family: 'Rampart One', cursive;
+    font-size: 3rem;
+}
+
+/* Styling for the header element */
+header {
+    height: 15vw;
+    background-color:#FF8360; 
+    color: #fff;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+/* width, margin, border and padding main wrapper class */
+.main-wrapper {
+    width: 80vw; 
+    margin: 0 auto;
+    border: 2px solid #999; 
+    padding: 1em;  
+}
+
+/* styles the first paragraph that directly follows a div within each section */
+main section > div + p {
+    background-color: #3CDBD3;
+    padding: 1em;  
+}
+
+/* styles paragraphs within the second section */
+main section:nth-of-type(2) p {
+    background-color: #E8E288;
+    padding: 1em;  
+}
+
+/*  all section element base styling */
+section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    margin-bottom: 2.5vh;
+    justify-content:space-between;
+}
+
+/* section 1 and 2 styling and messing about. for whatever reason text align centers the photo and i have no idea why*/
+#sec1 div {
+    width: 40%;
+    text-align: center;
+    
+}
+
+/* aligning the text under the image better and making it look nice */
+
+#paragraphone {
+    margin-left: 7em;
+    text-align: center;
+}
+
+/* img sizing */
+#sec1 img {
+    width: 75%;
+    height: 85%;
+}
+
+/* paragraph sizing to be able to fit with the image beside*/
+#sec1 p {
+    width: 60%;
+    font-size: 1.1em;
+}
+
+/* section 2 sizing etc */
+#sec2 {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 1vw;
+    height:25vw;
+    font-size: 1.7em;
+}
+
+
+/* footer styling and alignments etc */
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;    
+    margin: 0;
+}
+
+
+footer p,
+footer a {
+    background-color:#7DCE82; 
+    color: #fff;
+    padding: 1.5em;
+    border: 2px solid #fff;
+    height: 10vh;
+    text-align:center;
+    justify-content: center; 
+}
+
+footer a {
+    background-color:#FF8360;
+    text-align: center;
+    padding-top: 3em;
+    order: 1;
+    font-size: .7em;
+}
+
+footer p {
+    font-size: 1.2em;
+    flex-basis: 47.5%;
+    order: 2; 
+}
